@@ -26,21 +26,23 @@ int shell() {
         if (status == EXIT_SHELL) {
             break; // Exit the shell
         }
+
+        input[0] = '\0'; // Ensure input is empty for the next iteration
     }
 
     return EXIT_SUCCESS;
 }
 
 int execute_command(char **argv, int argc) {
-    if (strcmp(argv[0], "exit") == 0) {
+    if (strcmp(argv[0], "exit") == 0 && argc == 1) {
         return EXIT_SHELL;
     }
-    if (strcmp(argv[0], "help") == 0) {
+    if (strcmp(argv[0], "help") == 0 && argc == 1) {
         printf("Available commands:\n");
         printf("  exit - Exit the shell\n");
         printf("  help - Show this help message\n");
         printf("  cd <directory> - Change directory\n");
-        printf("  ls - List files in the current directory\n");
+        printf("  others commands from originally shell also works\n");
         return EXIT_SUCCESS;
     }
     if (strcmp(argv[0], "cd") == 0) {
@@ -49,7 +51,7 @@ int execute_command(char **argv, int argc) {
             return EXIT_FAILURE;
         }
         if (chdir(argv[1]) != 0) {
-            perror("chdir failed");
+            perror("cd");
             return EXIT_FAILURE;
         }
         return EXIT_SUCCESS;
@@ -61,7 +63,7 @@ int execute_command(char **argv, int argc) {
         exit(EXIT_FAILURE);
     } else if (pid == 0) {
         execvp(argv[0], argv);
-        perror("execvp failed");
+        perror(argv[0]);
         _exit(EXIT_FAILURE);
     } else {
         int status;

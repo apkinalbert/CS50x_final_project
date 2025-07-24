@@ -28,7 +28,6 @@ int parse_input(char *input, char **argv, int *count) {
 
     // If no command was entered
     if (argc == 0) {
-        fprintf(stderr, "No command entered.\n");
         return PARSE_ERR;
     }
     // Null-terminate the argument list
