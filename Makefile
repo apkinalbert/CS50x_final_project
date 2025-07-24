@@ -1,11 +1,11 @@
 CFLAGS = -std=c11 -Wall -Werror -Wextra
 OBJDIR = build
-OBJS = $(OBJDIR)/input.o $(OBJDIR)/main.o $(OBJDIR)/parser.o $(OBJDIR)/shell.o
+OBJS = $(OBJDIR)/input.o $(OBJDIR)/main.o $(OBJDIR)/parser.o $(OBJDIR)/shell.o 
 
 all: mysh
 
 mysh: $(OBJS)
-	gcc $^ -o $@
+	gcc $^ -o $@ -lreadline
 
 $(OBJDIR)/input.o : src/input.c include/input.h | $(OBJDIR)
 	gcc $(CFLAGS) -c $< -o $@

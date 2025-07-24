@@ -8,10 +8,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <readline/readline.h>
+#include <readline/history.h>
 
 
 int get_input(char *buffer, size_t size);
 void get_last_two_dirs(char *buf);
-void clear_stdin();
 
 #endif

@@ -5,16 +5,19 @@
 int get_input(char *buffer, size_t size) {
     char cwd[PATH_MAX];
     get_last_two_dirs(cwd);
-    printf("[mysh] %s > ", cwd);
-    if (fgets(buffer, size, stdin) == NULL) {
-        return 0;
+    char prompt[PATH_MAX + 32];
+    snprintf(prompt, sizeof(prompt), "[mysh] %s > ", cwd);
+    char *input = readline(prompt);
+    if (input == NULL) {
+        return 0; // EOF (Ctrl+D)
     }
-    size_t len = strlen(buffer);
-    if (len > 0 && buffer[len - 1] == '\n') {
-        buffer[len - 1] = '\0';
-    } else {
-        clear_stdin(); 
+    if (*input != '\0') {
+        add_history(input);
     }
+    strncpy(buffer, input, size - 1);
+    buffer[size - 1] = '\0';
+
+    free(input);
     return 1;
 }
 
@@ -36,15 +39,4 @@ void get_last_two_dirs(char *buf) {
         return; 
     else
         memmove(buf, second_last_slash, strlen(second_last_slash) + 1);
-}
-
-void clear_stdin() {
-    int c;
-    int count = 0;
-    while ((c = getchar()) != '\n' && c != EOF) {
-        count++;
-    }
-    if (count > 0) {
-        fprintf(stderr, "Input too long, clearing stdin buffer.\n");
-    }
 }
