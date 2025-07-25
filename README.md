@@ -15,28 +15,27 @@ This project helped me gain a deeper understanding of Unix system calls, process
 
 ## Project Structure
 
-    src/ — Contains all the source code files. Each module or component is separated into its own file or subdirectory to improve readability and manageability.
+src/ — Contains all the source code files. Each module or component is separated into its own file or subdirectory to improve readability and manageability.
 
-    include/ — Header files (if applicable) are stored here, defining interfaces and shared declarations used throughout the project.
+include/ — Header files (if applicable) are stored here, defining interfaces and shared declarations used throughout the project.
 
-    Makefile — Compilation rules for building the shell
+Makefile — Compilation rules for building the shell
 
-    README.md — Project documentation (you’re reading it!)
+README.md — Project documentation (you’re reading it!)
 
 
 ## Build & Run
 
 1. Compile the shell using `make`:
 
-   ```bash
    make
    
 2. Run the shell:
 
-    bash
     ./mysh
 
 3. Use it like a normal shell. For example:
+
     ls -l
     cd ..
     sleep 5
@@ -44,12 +43,14 @@ This project helped me gain a deeper understanding of Unix system calls, process
 
 ## Future Improvements
 
-    Add support for pipes and input/output redirection
+Add support for pipes and input/output redirection
 
-    Enhance signal handling and job control features
+Enhance signal handling and job control features
 
 ## Contact
-    Feel free to reach out via apkinalbert@yandex.ru
+
+Feel free to reach out via apkinalbert@yandex.ru
 
 ## Repository
-    The source code for this project is available on GitHub: [https://github.com/apkinalbert/final_project]https://github.com/apkinalbert/final_project
+
+The source code for this project is available on GitHub: [https://github.com/apkinalbert/final_project]https://github.com/apkinalbert/final_project
