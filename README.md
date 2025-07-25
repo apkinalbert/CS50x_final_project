@@ -1,11 +1,11 @@
-# mysh — Minimal Unix Shell
+# Minimal Unix Shell
 
-A minimal Unix shell written in C that implements basic shell functionalities such as command execution, process management, built-in commands (`cd`, `exit`), background job support, and signal handling.
+A minimal Unix shell written in C that implements basic shell functionalities such as command execution, process management, built-in commands (`cd`, `exit`, `help`), background job support, and signal handling.
 
 ## Features
 
 - Interactive command input and execution using `fork()` and `exec()`
-- Built-in commands: `cd`, `exit`
+- Built-in commands: `cd`, `exit`, `help`
 - Signal handling for `Ctrl+C` (SIGINT) and `Ctrl+Z` (SIGTSTP)
 - Basic job control: `jobs`, `fg`, `bg`
 
@@ -27,8 +27,8 @@ README.md — Project documentation (you’re reading it!)
 ## Build & Run
 
 1. Compile the shell using `make`:
-
-   make
+    ```bash
+    make
    
 2. Run the shell:
 
@@ -53,4 +53,8 @@ Feel free to reach out via apkinalbert@yandex.ru
 
 ## Repository
 
-The source code for this project is available on GitHub: [https://github.com/apkinalbert/final_project]https://github.com/apkinalbert/final_project
+The source code for this project is available on GitHub: [https://github.com/apkinalbert/final_project](https://github.com/apkinalbert/final_project)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
