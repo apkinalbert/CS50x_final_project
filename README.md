@@ -39,8 +39,7 @@ This project facilitates a deeper understanding of Unix system calls, process ma
     ls
     cd ..
     exit
-    
-    and so on...
+    ps
 
 ## Future Improvements
 
