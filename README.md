@@ -36,10 +36,10 @@ This project facilitates a deeper understanding of Unix system calls, process ma
 
 3. Use it like a normal shell. For example:
     ```bash
-    ls -l
+    ls
     cd ..
-    sleep 5
     exit
+and so on...
 
 ## Future Improvements
 
