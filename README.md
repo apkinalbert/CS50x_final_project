@@ -15,13 +15,13 @@ This project helped me gain a deeper understanding of Unix system calls, process
 
 ## Project Structure
 
-src/ — Contains all the source code files. Each module or component is separated into its own file or subdirectory to improve readability and manageability.
+- src/ — Contains all the source code files. Each module or component is separated into its own file or subdirectory to improve readability and manageability.
 
-include/ — Header files (if applicable) are stored here, defining interfaces and shared declarations used throughout the project.
+- include/ — Header files (if applicable) are stored here, defining interfaces and shared declarations used throughout the project.
 
-Makefile — Compilation rules for building the shell
+- Makefile — Compilation rules for building the shell
 
-README.md — Project documentation (you’re reading it!)
+- README.md — Project documentation (you’re reading it!)
 
 
 ## Build & Run
