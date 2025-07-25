@@ -11,7 +11,7 @@ A minimal Unix shell written in C that implements basic shell functionalities su
 
 ## Motivation
 
-This project helped me gain a deeper understanding of Unix system calls, process management, and how a shell interacts with the operating system at a low level. It is a great practical exercise for exploring user-OS interaction.
+This project facilitates a deeper understanding of Unix system calls, process management, and the interaction between a shell and the operating system at a low level. It serves as an effective practical exercise for exploring user-to-OS communication mechanisms.
 
 ## Project Structure
 
