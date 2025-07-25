@@ -31,11 +31,11 @@ README.md — Project documentation (you’re reading it!)
     make
    
 2. Run the shell:
-
+    ```bash
     ./mysh
 
 3. Use it like a normal shell. For example:
-
+    ```bash
     ls -l
     cd ..
     sleep 5
