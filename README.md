@@ -1,6 +1,6 @@
 # Minimal Unix Shell
 
-A minimal Unix shell written in C that implements basic shell functionalities such as command execution, process management, built-in commands (`cd`, `exit`, `help`), background job support, and signal handling.
+This is a minimal Unix-like shell implemented in C from scratch. It supports built-in commands like cd, pwd, and exit, as well as execution of external programs with arguments. The shell handles foreground and background job control, including jobs, fg, and bg, and provides an interactive prompt with readline. It also features basic signal handling and a custom parser. The project is compiled using a Makefile and was built as a final submission for CS50x. It was a way to deepen my understanding of systems programming, Unix processes, and how real-world shells work internally.
 
 #### Video Demo:  [YOUTUBE](https://youtu.be/KZ55P2Vclgw)
 
