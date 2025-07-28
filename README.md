@@ -2,6 +2,8 @@
 
 A minimal Unix shell written in C that implements basic shell functionalities such as command execution, process management, built-in commands (`cd`, `exit`, `help`), background job support, and signal handling.
 
+#### Video Demo:  [YOUTUBE](https://youtu.be/KZ55P2Vclgw)
+
 ## Features
 
 - Interactive command input and execution using `fork()` and `exec()`
